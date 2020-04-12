@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog -->
+<html lang="ru" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="http://127.0.0.1:8080/openserver/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://127.0.0.1:8080/openserver/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/codemirror.css"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/show-hint.css"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/lint.css"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/phpmyadmin.css.php"><link rel="stylesheet" type="text/css" href="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/printview.css" media="print" id="printcss"><title>127.0.0.1:8080 / 127.0.0.1 / webblog | phpMyAdmin 4.8.3</title><script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.min.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery-migrate.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/whitelist.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/sprintf.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/ajax.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/keyhandler.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery-ui.min.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/js.cookie.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.mousewheel.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.event.drag-2.2.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.validate.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery-ui-timepicker-addon.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.ba-hashchange-1.3.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.debounce-1.0.5.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/menu-resizer.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/cross_framing_protection.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/rte.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/tracekit.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/error_report.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/messages.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/config.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/doclinks.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/functions.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/navigation.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/indexes.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/common.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/page_settings.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/shortcuts_handler.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/codemirror.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/sql.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/runmode.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/show-hint.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/sql-hint.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/lint.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/sql-lint.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/console.js.завантаження"></script>
+<script data-cfasync="false" type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"",opendb_url:"db_structure.php",lang:"ru",server:"1",table:"",db:"",token:"Q^b@?5qg\'7KvA8>0",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Обзор",pma_text_left_default_tab:"Структура",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/openserver/phpmyadmin/",arg_separator:"&",PMA_VERSION:"4.8.3",auth_type:"cookie",user:"root"});
+ConsoleEnterExecutes=false
+AJAX.scriptHandler.add("vendor/jquery/jquery.min.js",0).add("vendor/jquery/jquery-migrate.js",0).add("whitelist.php",1).add("vendor/sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("vendor/jquery/jquery-ui.min.js",0).add("vendor/js.cookie.js",1).add("vendor/jquery/jquery.mousewheel.js",0).add("vendor/jquery/jquery.event.drag-2.2.js",0).add("vendor/jquery/jquery.validate.js",0).add("vendor/jquery/jquery-ui-timepicker-addon.js",0).add("vendor/jquery/jquery.ba-hashchange-1.3.js",0).add("vendor/jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("vendor/tracekit.js",1).add("error_report.js",1).add("messages.php",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("shortcuts_handler.js",1).add("vendor/codemirror/lib/codemirror.js",0).add("vendor/codemirror/mode/sql/sql.js",0).add("vendor/codemirror/addon/runmode/runmode.js",0).add("vendor/codemirror/addon/hint/show-hint.js",0).add("vendor/codemirror/addon/hint/sql-hint.js",0).add("vendor/codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
+$(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("vendor/js.cookie.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("vendor/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("shortcuts_handler.js");AJAX.fireOnload("console.js");});
+// ]]></script><noscript><style>html{display:block}</style></noscript><style type="text/css">.mallbery-serp-2kPdnU {
+  position: relative !important;
+  display: flex !important;
+  width: 240px !important;
+  align-items: center !important;
+  min-height: 1em;
+}
+.mallbery-serp__logo-3kGyB2 {
+  width: 16px !important;
+  height: 16px !important;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS9SURBVFhHrZdbqFdFFIdPatrVS1lqlokaaol28UYZSQ8mPiiZGqGBRD0UYWD1JhFBKAn2Zl5QiBAJSTAQNRNUUtTU9OiJ8p4YZV4yj5FlXr5vO/vfvsw+/1B/8DHn7D171po1s9bM/6aGOhq85OAtNJ2gN/SFp+Fh6AE+d4xmOAZNsAb2wkE4t31y739pK1XpAIZ9dwc8C0/CCNBwR8jqMvwNF6AtaHAfrIMNAR2xX0ktOdCaxlm+BGPhUWgHWTnoD6CRo9AdpsJt8Fd4tgyWQxNO6GROLS5BJvwj4X14CNJvLoEhnwG74DRoeA68CG1AB10eo+H3e3HC72rKOYDBm2kcxJBdTB4inneh+RAmg1E4C6thDv220dZE30E082B48uCqXBb3xQz6r0yeBLUKbWrcNb4fiuvlOw3rsKHdAgtgNxR1Ag5d/TORE/kF9kBr7OQmnTgQHj4Co+BYNkzhXXswCu4Lw/4JbKafm68oQ1+bGDI75oNL8BXf5CaXduwMY+AkGN6sNHof3AuGci5sYKDztDHdDTqrnP1iWAJHYt+0YYaGdijcA2uKHqJbwej4fBZ8GumT1YCAM/8cZtI/t/ux6ZjJchoBPX4CzoBpU5TReRC2wtI6xtVjoMEVsKBoPMgxnXRHHXgA+sP3UAy/6gYa/QwO+6BKzMwMegqshi6V1TCnsKfuhNHQRwf6gJvuAMS8tRZshj0Vs8nKpfoRFsEB+tdSOSMduB2GQH8dGAymzWE+yBWJINPnS96d1fswg5LCczfsNPpugn+SF2VpswN0hefSPaCRWPgbGOgEXMCAfV0Oz4eS6OMy7aB1L7UkHXUMI5tEwLz9jg9js8/KvTIBohFQOmqLs22hAzh2Udq0rpgJPfznOFipKsVA7lrLsO05n1WJvlbNx8E1dpZFuUw6YL/2OmBRqRyUAV2iF8Aq2dhSpOhrdMyCt8EjXGNFpRGw/lz2n50QVRjQk3AKuMaltEpFX8fqCW+A31g1Y1ngshh+22Y/smJVqRe8BWbKEfgVSgqOelt6B7w7GF6zIBYt+3pxsT3aqiqkDGr9nwbDQEc970uHTzDuxeVVGA+G1jFjs0+VVtNGB86JAT0fvP+9Cy+D3rqWVrlc/2DcS8qb4E3I3Fb2L40dZKb8Ab/B+qoBvYY9D+n9z37eFXQsUejrBtVJb0DenFK5vla72CZ0b3jqepdosrI5uOklDuhMrNPOJuugVysPmJlwCqwL4+B1uAt0KJWzXAgfsMSmeU3Yc388A050WWrA8+A9+BgmghUvFx3kAWI6et3yoJkNr4FOZ40rjXgkO6mijMB2+Bqakw/xysGnB8zRGyGzwChMJwpV50JtlhaiL2At1Dvv/6/cvJNgDBPsDLH98F/o6ODGMd+9bHqsFpfgWrUfVsEm8Mzx/5pqRnjh2nwLH4EV70ZFwv31ChgNj+GccrPECYvHUrCzv2Y8oq/HEb/1mu7SunEbIafi7k0U1strmvltTbAqerJF+0ek4T/hZ3Bvmb6Gv3SjqhwQJ3xncfF08xexudsP6mWJVc4fpxsD38DvGI9Gsu6Mwub0BuNJNxAsUua4v6BMX+u+t6CfwIutP1S9X7qPTmE49uMlqKHhCpI4cvVwwsh9AAAAAElFTkSuQmCC) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.mallbery-serp__text-PQJ-af {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 8px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #ff3300 !important;
+}
+.mallbery-serp-2kPdnU .tutorial-bg-19KZ3Q {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2147483640;
+}
+.mallbery-serp-2kPdnU .tutorial-container-3O0xDe {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 600px;
+  min-width: 400px;
+  width: calc(100vw - 640px);
+  transform: translate(calc(100% + 220px), -135px);
+  z-index: 2147483640;
+  font-family: 'Montserrat', sans-serif;
+}
+.mallbery-serp-2kPdnU .tutorial-container-3O0xDe + div {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 5px 10px;
+  line-height: 24px;
+  height: 24px;
+  box-shadow: #ffffff 0px 0px 24px 21px;
+  z-index: 2147483640;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mallbery-serp-2kPdnU .tutorial-container-3O0xDe + div:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 105%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border-radius: 17px;
+  z-index: -1;
+}
+.mallbery-serp-2kPdnU .tutorial-paragraph-E0Hv40 {
+  color: #fff;
+  line-height: 27px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.mallbery-serp-2kPdnU .tutorial-title-3eFqJl {
+  font-size: 28px;
+  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+.mallbery-serp-2kPdnU .tutorial-arrow-3nPizD {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 14px;
+  left: 0;
+  transform: translate(-110%, 0);
+  width: 240px;
+  height: 107px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUIAAACOCAYAAABE8AHnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAC15JREFUeNrsnXuQlWUdxzm7LLDcdlGBuA4XuSSiAl6RACnIyZA/ymqkGUdtFKfBKNOhcazRcrKySZ0hK8www7TJMiKHwmDKRFHwLheBFIJFrgELy53t+5t+O3NmZ897nhcW9rzPfj4z3zkHeM85M7+jn3mf8zzP78m1AQA4jdTX13fVQ5n/0R67FnlJyDWN2a8cy/9YZW+ja47kcrm6pl6c42sCaLWCahBOtT9aqvKeV/q/dfA0fl6hdGokrir3iv192wyU4YDyflv+cwCIQmomrZ6eHp6zmsjZnm4uqzPBUcXuxGqV4wmP+5QTyiGPcVA57M/tPY7kveeBAp+X/5rGNHxWPjXcEQKUtuC66KGvp4+nr4uul3KOP3Zu5o82Yez24eVel1RDmvpznQuo1oepB11UtRqOHi/1OiNCgJaTXM4lNkAZ6LHn/ZV+Lr0uzfBRJrQdynblI2Wnsisvuz3/bXgueR1rTd8FIgQ4vbIrd7kNU4YqQ5RBedJrfwrDza02rFP+448NaZDeNnsuqR3lm0CEAGdCeDZZMFL5eJ70LIPb/H9SIS023PywiWxStpjoJLh6Ko8IAVpCeDZjep5yvotvhD/vdxJvZ0PUtco6jz3fYMKT5PZQbUQIUArSs6UgYzyjlNE+tC1L8zYut/c8qxvkh+wQIUCpSc/WxV3qsmuQ38CUb2O/z72hvKus8sc1hRbxAiIEaEnp2R3dcGWscrk/Dk/x/0PDXd7rLr437bmEt53qIkKAUhVfR5fdeOUyT1WKt7DJiVeU5Z43JL1aKosIAUpZfLa4eJwyUZngw9zQmVtbCPyai+9V5WVJr4aqIkKAUhdfpd/tXeXyu1gpD3y5LSJepvzTs6K1LSYGRAjZlZ8tXZmifNolGLow2ZasLHXpvai8I/GdoKKIECAL4rNGAZNdfCbA3imGuia8xcoLylssRAZECFmSn+3QmKZcq1zRJmz9nkluRZ74lkl8h6kmAGRFfOXKOOVHytr6cPYov1NuULpTSQDImvzaK1OVecrOFPJbrTyoTFQqqCQAZFV+Typ7U8jvFeVO5VyqCABZlF+F8pmU8juuLFVmKn2oIgBkUX45ZYIyV9mdQn5/VW5WelBFAMiqAIcq31U+SDnstTu/nlQQALIqv7OVryrLU8hvlXK3MpgKAkBW5VemXK08qxwJlN8O5SfKhVQQALIswL7KPcrGFL/7LVQ+p7SjggCQVfm19SUvf3axhfC+MlvpRQUBIMsC7KXcq9QEys+GyL9VxlM9AMi6AMcqT6X47W+jT3yw5AUAMi2/9r5fd2Wg/E4oi5Rpfn4vAEBmBdhb+Z6yPVCA+5VH2OoGADEIcITyeIrh72bf61tN9QAg6wIc78tZQlmhTKfLCwBkXX62+PnzKXd+2FKZCVQPALIuwHbKLcq6FBMgTyujqB4AxCDAGcqmQAEe8+aow6geAGRdgJXK11II8KDyqNKf6gFADAKcpWxNsQPkEba/AUAsQ+A0ArQh8GPcAQJADAK0Jgg3phgC2yTIfBZBA0AMAsz5MpjVKZbB/EE5j+oBQAwSvDrFPmDjReUSKgcAMQhwjJ/mFsoaa4RA5QAgBgFaJ+gn/Pe9ELYpt9nvh1QPALIuwM7KfUpdoADr/NS4LlQPALIuwDI/z7cmxUywdY/pTfUAIAYJ2kHob6X4HXAZEyEAEIsA+3iTg1C2KF+2ZTRUDwCyLsAKb3JaGyjAQ8r37fdDqgcAMUhwkrIqxV3gc8ogKgcAMQiwX8ph8FplCpUDgBgEWK7cnnIYfI+dKkf1ACAGCV6gvJriLtCOxxxM5QAgBgF28MmNoylmg6+jcgAQiwQnpTgjxPoDPqR0pXIAEIMAq32nR5pjMi+icgAQiwSv8eFt6Dkhd9EcAQBiEWBXZW6Ku8B/KEOoHADEIsFJKVrl7/PjNdkaBwBRCNDaZM1JcRe40BZTUzkAiEWCVyrrAwW4S5lO1QAgFgHaqXH3KscDJfgX+gQCQEwSHOD9/0LYr9zCb4EAEJMEr1f2pjg1biBVA4BYBNhFeTJFkwTrLVhG5QAgFglepmwIlODryvlUDQBikuAs5UigBH+otKNqABCLAKuU3wcK8CMapgJAbBK8KEW3mOeVHlQNAGKS4Fe8CUIxDitfZ1kMAMQkwE7KEynODhlF1QAgJgkOUt4OlOA8jtAEgNgkOEXZHdgz8CYqBgAxCTDnzVBD9gqvp3M0AMQmwY7KM4FD4T/aUhqqBgAxSbCv7/4IOUTpDmaFASA2CV6qbA2QYI3yCSoGALFJcHrg+kA7Q6QnFQOAmARokyL3Bf4e+Ch7hQEgNgm2U34TIEBrqnArFQOA2CTYzYe5xdimjKNiABCbBG2nyJoACa7kNDkAiFGCo/0urxhPKZVUDABik6Btl6sNkOBsqgUAMUpwekAnaVs+8wWqBQAxSvAbAXeBO5QrqBYAxCjB+wMkaBMng6gWAMQmwDLlpwESXGpLaagYAMQmQVsoPT9Agr9mpwgAxCrBBQES/A6dYwCgFCVWoTyg7FGOKguVASleb30E/15EgNZo9WaqDQClKsI5TYjrPaU8UIJLikiwTplKpQGgVCV4TYLALinyWjts/eUiEtyljKXSAFCqEqxWtiRI7MIiElxeRIKblZFUGgBKWYTzEiT2ZqFJjUAJrmeNIABkeUhs54JcfAoSfEf5GFUGgFKW4Fl+/kch7j8FCS7ndDkAyIII5yaI7F2lfROvsdnhlwJ2iyBBACh5CV6ZdkhsYgxYIvM3kyUVBoBSl2CF3/EFD4kDd4wsYMscAGRFhLOLzPJ2aHR9ufI0EgSAWCQ4wHd4FGJKo+vtuM1fIUEAiEmEScPbZ5q4/sEiEpwfsgUPAKBUJDg5QWj7lF6Nrv9mwJ1gWyoLAFmRYFtf4FyImY2uv5HhMADEJsLbEqT2dv7wVs+v9XZZSBAAopFgtR+OVIhP5l17eZHJlCVIEACyKMIfJ93d5V03pIgwX2KxNABkUYL9lUMFxGZdqIf6dd19DWEhVoRum9N1lda6S+nDNwAApSDCXybI7SG/pmORJgrWpbp7wGeNUH6mHMh77TxmlgGgJSU41PcNN4WdS9LNF0w/myDBjUrfhM+wYzun+h7jQtzFtwEALSXCpG1x3/JrHki4ZkfD0LnA8Hemsi7gxLp/8W0AQEtIcFSCmLYpnYusFdyrjCkgwFnK1vpwFvONAEBLiPC5BDGZyCYqRwr8u/39pxq9n4nzjpQCbICT6wDgjEtwZIKUNinD/VS5Qlyf917Wfut2ZedJCNBafX2WbwQAWkKESb8Nziyy1e5Ofw+bRPmS8u+U8juh/MkWaRc69AkA4HRL8NyE7XGbXFKFeNjfY7RNcKQU4B5fuD2QbwEAWlqEjyXIalHCv5kgz1F+7nd1oWz3Rq+dqT4AlIIE+yVMgOxLkNlK5SaXWiibfdKlksoDQCmJ8AcJ4jqUILQXUgjQZo1n0HgBAEpRgrZNbncBeR1PkOP+QAHadd9WOlFtAChVEd56ErO7IdgWvTlKT6oMAKUswZw3RmhuFtuaQyoMAFkQ4eRmFmCNch2VBYAsiXBBM0rQls9UU1UAyJIE+xQ5XyQUa7d1FRUFgCyK8O5mkODjSleqCQBZlKBNkmw4BQFaq60vUkkAyLIIJ52CBF9jXzAAxCDC+ScpwV8o7akgAGRdglUJ2+bqExquzqB6ABCLCG9IKUFrxDqRygFATCJclEKCHyjDqBoAxCTB7n44ewgr2ScMADGKcEagBK3LdBUVA4AYRRjSRn+JteaiWgAQowS7IEEAaO0inIYEAaA1U6Yk7QZZqUzL5XJ1lAoAYr4jHFvgTvBDm02mQgDQWmQ4s9FZI88jQQBojTKsVC5QelMNAGhN/E+AAQAvkW9r3Ug2awAAAABJRU5ErkJggg==);
+}
+</style><link rel="stylesheet" type="text/css" href="chrome-extension://fajafkhgbcekjfffgnpbbjhdhimgffec/styles.css"><link rel="stylesheet" type="text/css" href="chrome-extension://klmjcelobglnhnbfpmlbgnoeippfhhil/styles.css"><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/db_structure.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/tbl_change.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.uitablefilter.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/gis_data_editor.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/multi_column_sort.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/makegrid.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/sql.js(1).завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/tbl_structure.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/jquery.fullscreen.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/database.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/objects.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/page.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/history.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/move.js.завантаження"></script><script type="text/javascript" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/init.js.завантаження"></script></head><body style="margin-left: 240px; margin-bottom: 17.5938px; padding-top: 46.4px; cursor: inherit;" data-gr-c-s-loaded="true"><div id="pma_navigation" style="width: 240px;"><div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div><div id="pma_navigation_collapser" title="Скрыть панель" style="left: 240px;">←</div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="http://127.0.0.1:8080/openserver/phpmyadmin/navigation.php?ajax_request=1"></a>    <div id="pmalogo">
+                    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/index.php">
+                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/logo_left.png" alt="phpMyAdmin" id="imgpmalogo">
+                    </a>
+            </div>
+<!-- LINKS START --><div id="navipanellinks"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/index.php" title="На главную"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="На главную" alt="На главную" class="icon ic_b_home"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/logout.php" class="logout disableAjax" title="Выход"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Выход" alt="Выход" class="icon ic_s_loggoff"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/index.html" target="documentation" title="Документация phpMyAdmin"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация phpMyAdmin" alt="Документация phpMyAdmin" class="icon ic_b_docs"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Findex.html" target="mysql_doc" title="Документация"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_sqlhelp"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="pma_navigation_settings_icon" title="Настройки панели навигации"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Настройки панели навигации" alt="Настройки панели навигации" class="icon ic_s_cog"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="pma_navigation_reload" title="Обновить панель навигации"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Обновить панель навигации" alt="Обновить панель навигации" class="icon ic_s_reload"></a></div><!-- LINKS ENDS --><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Загрузка…" alt="Загрузка…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber"></div><div id="pma_navigation_tree" class="list_container synced highlight" style="height: 821.719px;"><div class="pma_quick_warp"><div class="drop_list"><span title="Недавние таблицы" class="drop_button">Недавнее</span><ul id="pma_recent_list"><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=article_tag">`webblog`.`article_tag`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=user">`webblog`.`user`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=tag">`webblog`.`tag`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=migration">`webblog`.`migration`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=comment">`webblog`.`comment`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=category">`webblog`.`category`</a></li><li class="warp_link"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_recent_favorite.php?db=webblog&amp;table=article">`webblog`.`article`</a></li></ul></div><div class="drop_list"><span title="Избранные таблицы" class="drop_button">Избранное</span><ul id="pma_favorite_list"><li class="warp_link">Нет избранных таблиц.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer" class=""><div id="navigation_controls"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="pma_navigation_collapse" title="Свернуть все"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Свернуть все" alt="Свернуть все" class="icon ic_s_collapseall"></a><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="pma_navigation_sync" title="Отсоединить от основной панели"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Отсоединить от основной панели" alt="Отсоединить от основной панели" class="icon ic_s_link"></a></div></li><!-- CONTROLS ENDS --></ul><div id="pma_navigation_tree_content" style="height: 781.703px;"><ul><li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/server_databases.php?server=1"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/server_databases.php?server=1" title="">Создать БД</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.YnM=</span><span class="hide vPath">cm9vdA==.YnM=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=bs&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=bs" title="Структура">bs</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.ZGF0YQ==</span><span class="hide vPath">cm9vdA==.ZGF0YQ==</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=data&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=data" title="Структура">data</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.ZWxlY3Ryb24=</span><span class="hide vPath">cm9vdA==.ZWxlY3Ryb24=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=electron&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=electron" title="Структура">electron</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.Z3JvdXA=</span><span class="hide vPath">cm9vdA==.Z3JvdXA=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=group&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=group" title="Структура">group</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide vPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=information_schema&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=information_schema" title="Структура">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.aXFldm9sdXRpb24=</span><span class="hide vPath">cm9vdA==.aXFldm9sdXRpb24=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=iqevolution&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=iqevolution" title="Структура">iqevolution</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.bWFnYXo=</span><span class="hide vPath">cm9vdA==.bWFnYXo=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=magaz&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=magaz" title="Структура">magaz</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.bWFza2E=</span><span class="hide vPath">cm9vdA==.bWFza2E=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=maska&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=maska" title="Структура">maska</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.bXlzcWw=</span><span class="hide vPath">cm9vdA==.bXlzcWw=</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=mysql&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=mysql" title="Структура">mysql</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide vPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=performance_schema&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=performance_schema" title="Структура">performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.c29jaWFs</span><span class="hide vPath">cm9vdA==.c29jaWFs</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=social&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=social" title="Структура">social</a><div class="clearfloat"></div></li><li class="database selected"><div class="block"><i></i><b></b><a class="expander loaded" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_minus" style=""></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=webblog&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=webblog" title="Структура">webblog</a><div class="clearfloat"></div><div class="list_container hide" style="display: block;"><ul><li class="new_table italics"><div class="block"><i></i><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_create.php?server=1&amp;db=webblog"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Новая" alt="Новая" class="icon ic_b_table_add"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_create.php?server=1&amp;db=webblog" title="">Новая</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.YXJ0aWNsZQ==</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.YXJ0aWNsZQ==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=article"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=article&amp;pos=0" title="Обзор">article</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.YXJ0aWNsZV90YWc=</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.YXJ0aWNsZV90YWc=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=article_tag"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=article_tag&amp;pos=0" title="Обзор">article_tag</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.Y2F0ZWdvcnk=</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.Y2F0ZWdvcnk=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=category"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=category&amp;pos=0" title="Обзор">category</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.Y29tbWVudA==</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.Y29tbWVudA==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=comment"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=comment&amp;pos=0" title="Обзор">comment</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.bWlncmF0aW9u</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.bWlncmF0aW9u</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=migration"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=migration&amp;pos=0" title="Обзор">migration</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.dGFn</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.dGFn</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=tag"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=tag&amp;pos=0" title="Обзор">tag</a><div class="clearfloat"></div></li><li class="last table"><div class="block"><i></i><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.d2ViYmxvZw==.dGFibGVz.dXNlcg==</span><span class="hide vPath">cm9vdA==.d2ViYmxvZw==.0KLQsNCx0LvQuNGG0Ys=.dXNlcg==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/tbl_structure.php?server=1&amp;db=webblog&amp;table=user"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/sql.php?server=1&amp;db=webblog&amp;table=user&amp;pos=0" title="Обзор">user</a><div class="clearfloat"></div></li></ul></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><span class="hide aPath">cm9vdA==.eWlpMmJhc2lj</span><span class="hide vPath">cm9vdA==.eWlpMmJhc2lj</span><span class="hide pos">0</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Развернуть/Свернуть" alt="Развернуть/Свернуть" class="icon ic_b_plus"></a></div><div class="block "><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?server=1&amp;db=yii2basic&amp;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции с базой данных" alt="Операции с базой данных" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?server=1&amp;db=yii2basic" title="Структура">yii2basic</a><div class="clearfloat"></div></li></ul></div></div><div id="pma_navi_settings_container"></div></div><div class="pma_drop_handler">Перетащите файлы сюда</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;"><div id="serverinfo"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_host item"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/index.php" class="item">Сервер: 127.0.0.1:3306</a><span class="separator item">&nbsp;»</span><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_db item"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?db=webblog" class="item">База данных: webblog</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><i class="scrollindicator scrollindicator--left"><img alt="" title="" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" class="icon ic_b_left"></i><div class="navigationbar" style="width: auto; overflow: visible;"><ul id="topmenu" class="resizable-menu"><li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_structure.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Структура" alt="Структура" class="icon ic_b_props">&nbsp;Структура
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_sql.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_search.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Поиск" alt="Поиск" class="icon ic_b_search">&nbsp;Поиск
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_multi_table_query.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Запрос&amp;nbsp;по&amp;nbsp;шаблону" alt="Запрос&amp;nbsp;по&amp;nbsp;шаблону" class="icon ic_s_db">&nbsp;Запрос&nbsp;по&nbsp;шаблону
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_export.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Экспорт" alt="Экспорт" class="icon ic_b_export">&nbsp;Экспорт
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_import.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Импорт" alt="Импорт" class="icon ic_b_import">&nbsp;Импорт
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_operations.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Операции" alt="Операции" class="icon ic_b_tblops">&nbsp;Операции
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/server_privileges.php?db=webblog&amp;checkprivsdb=webblog&amp;viewing_mode=db" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Привилегии" alt="Привилегии" class="icon ic_s_rights">&nbsp;Привилегии
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_routines.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Процедуры" alt="Процедуры" class="icon ic_b_routines">&nbsp;Процедуры
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_events.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="События" alt="События" class="icon ic_b_events">&nbsp;События
+            </a>
+        </li>
+<li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_triggers.php?db=webblog" class="tab">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Триггеры" alt="Триггеры" class="icon ic_b_triggers">&nbsp;Триггеры
+            </a>
+        </li>
+<li class="active">
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog" id="designer_tab" class="tabactive">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Дизайнер" alt="Дизайнер" class="icon ic_b_relations">&nbsp;Дизайнер
+            </a>
+        </li>
+<li class="submenu" style=""><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="tab nowrap"><img alt="" title="" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" class="icon ic_b_more">Ещё</a><ul class="notonly"></ul></li><div class="clearfloat"></div></ul></div>
+<i class="scrollindicator scrollindicator--right"><img alt="" title="" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" class="icon ic_b_right"></i></div>
+</div>
+<span id="page_nav_icons"><span id="lock_page_icon"></span><span id="page_settings_icon" style="display: none;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Настройки, касающиеся страницы" alt="Настройки, касающиеся страницы" class="icon ic_s_cog"></span><a id="goto_pagetop" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Кликните на строку, чтобы перейти вверх страницы" alt="Кликните на строку, чтобы перейти вверх страницы" class="icon ic_s_top"></a></span><div id="pma_console_container">
+    <div id="pma_console" style="margin-left: 243px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Консоль SQL запроса" alt="Консоль SQL запроса" class="icon ic_console">
+            <span>Консоль</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>Очистить</span>
+        </div>
+                            <div class="button history">
+            
+            <span>История</span>
+        </div>
+                            <div class="button options">
+            
+            <span>Параметры</span>
+        </div>
+                            <div class="button bookmarks">
+            
+            <span>Закладки</span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>Отладка SQL</span>
+        </div>
+            </div>
+                <div class="content" style="height: 92px; margin-bottom: -98.248px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        Нажмите Ctrl+Enter для выполнения запроса                    </span>
+                    <span class="hide" id="instructions-1">
+                        Нажмите Enter для выполнения запроса                    </span>
+                </div>
+                            <div class="message collapsed binded select successed" msgid="100843392597" targetdb="webblog" targettable="article"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `article`</div></div><div class="message collapsed binded select successed" msgid="968184252948" targetdb="webblog" targettable="article_tag"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `article_tag`</div></div><div class="message collapsed binded select successed" msgid="152100968155" targetdb="webblog" targettable="category"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `category`</div></div><div class="message collapsed binded select successed" msgid="209551744426" targetdb="webblog" targettable="comment"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `comment`</div></div><div class="message collapsed binded select successed" msgid="475111728815" targetdb="webblog" targettable="migration"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `migration`</div></div><div class="message collapsed binded select successed" msgid="542759790048" targetdb="webblog" targettable="migration"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `migration`</div></div><div class="message collapsed binded select successed" msgid="317857100102" targetdb="webblog" targettable="tag"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `tag`</div></div><div class="message collapsed binded select successed" msgid="769348804321" targetdb="webblog" targettable="user"><div class="action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div><div class="query highlighted"><span class="cm-keyword">SELECT</span> * <span class="cm-keyword">FROM</span> `user`</div></div></div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -16px; border-right-width: 14px; min-height: 15px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 15.2px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 15px;"></div><div class="CodeMirror-gutters" style="height: 29px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>по возрастанию</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>по убыванию</span>
+        </div>
+                            <div class="text">
+            
+            <span>Порядок сортировки:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>Отладка SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>Количество</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>Порядок выполнения</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>Занято времени</span>
+        </div>
+                            <div class="text">
+            
+            <span>Сортировки по:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>Группировать запросы</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>Разгруппировать запросы</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 92px;">
+                <div class="message welcome binded">В процессе получения информации по отладке SQL произошла ошибка.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action dbg_show_trace">
+            Показать трассировку
+                    </span>
+                            <span class="action dbg_hide_trace">
+            Скрыть трассировку
+                    </span>
+                            <span class="text count hide">
+            Количество
+                    </span>
+                            <span class="text time">
+            Занято времени
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Параметры</span>
+        </div>
+                            <div class="button default">
+            
+            <span>Сбросить настройки</span>
+        </div>
+            </div>
+            <div class="content" style="height: 92px;">
+                <label>
+                    <input type="checkbox" name="always_expand">Всегда разворачивать сообщения запроса                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history">Показать историю запросов                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query">Показать текущий запрос на просмотр                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes">
+                        Выполнить запрос по нажатию Enter и вставить новую строку по нажатию Shift + Enter. Чтобы сделать эту опцию постоянной, смотрите настройки.                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme">Переключиться на темную тему                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            Свернуть
+                    </span>
+                            <span class="action expand">
+            Развернуть
+                    </span>
+                            <span class="action requery">
+            Повторный запрос
+                    </span>
+                            <span class="action edit">
+            Изменить
+                    </span>
+                            <span class="action explain">
+            Анализировать
+                    </span>
+                            <span class="action profiling">
+            Профилирование
+                    </span>
+                            <span class="action bookmark">
+            Закладка
+                    </span>
+                            <span class="text failed">
+            Сбой выполнения запроса
+                    </span>
+                            <span class="text targetdb">
+            База данных
+                    </span>
+                            <span class="text query_time">
+            Запрошенное время
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+<div id="page_content" style="margin-left: 3px;"><div id="loading_parent"><span class="ajax_notification dismissable" id="ajax_message_num_24" style="cursor: pointer;"><div class="error">На сервере обнаружены некоторые ошибки!<br>Пожалуйста, посмотрите вниз текущего окна.<div><input id="pma_ignore_errors_popup" type="submit" value="Игнорировать" class="floatright message_errors_found"><input id="pma_ignore_all_errors_popup" type="submit" value="Игнорировать всё" class="floatright message_errors_found"></div></div></span></div><div id="script_server" class="hide">1</div><div id="script_db" class="hide">webblog</div><div id="script_tables" class="hide">{"j_tabs":{"webblog.article":1,"webblog.article_tag":1,"webblog.category":1,"webblog.comment":1,"webblog.migration":1,"webblog.tag":1,"webblog.user":1},"h_tabs":{"webblog.article":1,"webblog.article_tag":1,"webblog.category":1,"webblog.comment":1,"webblog.migration":1,"webblog.tag":1,"webblog.user":1}}</div><div id="script_contr" class="hide">[{"fk-tag_id":{"webblog.article_tag":{"tag_id":["webblog.tag","id"]}}},{"tag_article_article_id":{"webblog.article_tag":{"article_id":["webblog.article","id"]}}},{"fk-article_id":{"webblog.comment":{"article_id":["webblog.article","id"]}}},{"fk-post-user_id":{"webblog.comment":{"user_id":["webblog.user","id"]}}}]</div><div id="script_display_field" class="hide">{"article":"title","category":"title","comment":"text","migration":"version","tag":"title","user":"name"}</div><div id="script_display_page" class="hide"></div><div id="designer_tables_enabled" class="hide"></div>    <div id="name-panel">
+        <span id="page_name">Без названия</span>
+        <span id="saved_state">*</span>
+    </div>
+<div class="designer_header side-menu" id="side_menu">
+    <a class="M_butt" id="key_Show_left_menu" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#">
+        <img title="Показать/Скрыть список таблиц" alt="v" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/downarrow2_m.png" data-down="./themes/pmahomme/img/designer/downarrow2_m.png" data-up="./themes/pmahomme/img/designer/uparrow2_m.png">
+        <span class="hide hidable">
+            Показать/Скрыть список таблиц        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="toggleFullscreen" class="M_butt">
+        <img title="Отобразить в полном экране" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/viewInFullscreen.png" data-enter="./themes/pmahomme/img/designer/viewInFullscreen.png" data-exit="./themes/pmahomme/img/designer/exitFullscreen.png">
+        <span class="hide hidable" data-exit="Выйти из полноэкранного режима" data-enter="Отобразить в полном экране">
+            Отобразить в полном экране        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="addOtherDbTables" class="M_butt">
+        <img title="Добавить таблицы из других баз данных" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/other_table.png">
+        <span class="hide hidable">
+            Добавить таблицы из других баз данных        </span>
+    </a>
+            <a id="newPage" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt">
+            <img title="Новая страница" alt="" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/page_add.png">
+            <span class="hide hidable">
+                Новая страница            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="editPage" class="M_butt ajax">
+            <img title="Открыть страницу" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/page_edit.png">
+            <span class="hide hidable">
+                Открыть страницу            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="savePos" class="M_butt">
+            <img title="Сохранить страницу" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/save.png">
+            <span class="hide hidable">
+                Сохранить страницу            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="SaveAs" class="M_butt ajax">
+            <img title="Сохранить страницу как" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/save_as.png">
+            <span class="hide hidable">
+                Сохранить страницу как            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="delPages" class="M_butt ajax">
+            <img title="Удалить страницы" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/page_delete.png">
+            <span class="hide hidable">
+                Удалить страницы            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="StartTableNew" class="M_butt">
+            <img title="Создать таблицу" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/table.png">
+            <span class="hide hidable">
+                Создать таблицу            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="rel_button">
+            <img title="Создать ссылку" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/relation.png">
+            <span class="hide hidable">
+                Создать ссылку            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="display_field_button">
+            <img title="Выбор отображаемого столбца" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/display_field.png">
+            <span class="hide hidable">
+                Выбор отображаемого столбца            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="reloadPage" class="M_butt">
+            <img title="Обновить" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/reload.png">
+            <span class="hide hidable">
+                Обновить            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/faq.html#faq6-31" target="documentation" class="M_butt">
+            <img title="Помощь" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/help.png">
+            <span class="hide hidable">
+                Помощь            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="angular_direct_button">
+        <img title="Угловые линии связей / Прямые линии связей" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/ang_direct.png">
+        <span class="hide hidable">
+            Угловые линии связей / Прямые линии связей        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="grid_button">
+        <img title="Привязать к сетке" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/grid.png">
+        <span class="hide hidable">
+            Привязать к сетке        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="key_SB_all">
+        <img title="Свернуть/развернуть отображение всех таблиц" alt="v" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/downarrow1.png" data-down="./themes/pmahomme/img/designer/downarrow1.png" data-right="./themes/pmahomme/img/designer/rightarrow1.png">
+        <span class="hide hidable">
+            Свернуть/развернуть отображение всех таблиц        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="SmallTabInvert" class="M_butt">
+        <img title="Обратное отображение" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/bottom.png">
+        <span class="hide hidable">
+            Обратное отображение        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="relLineInvert" class="M_butt_Selected_down">
+        <img title="Переключение линий ссылки" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/toggle_lines.png">
+        <span class="hide hidable">
+            Переключение линий ссылки        </span>
+    </a>
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" id="exportPages" class="M_butt">
+            <img title="Экспорт схемы" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/export.png">
+            <span class="hide hidable">
+                Экспорт схемы            </span>
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="key_Left_Right">
+        <img title="Переместить меню" alt="&gt;" data-right="./themes/pmahomme/img/designer/2leftarrow_m.png" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/2rightarrow_m.png">
+        <span class="hide hidable">
+            Переместить меню        </span>
+    </a>
+    <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" id="pin_Text">
+        <img title="Прикрепить текст" alt="&gt;" data-right="./themes/pmahomme/img/designer/anchor.png" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/anchor.png">
+        <span class="hide hidable">
+            Прикрепить текст        </span>
+    </a>
+</div>
+<div id="canvas_outer"><form action="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog" id="container-form" method="post" name="form1"><div id="osn_tab" style="width: 687px; height: 530px;">
+    <canvas class="designer" id="canvas" width="684" height="527" style="display: inline-block;"></canvas>
+</div>
+<div id="layer_menu" class="hide" style="top: -1000px;">
+    <div class="center">
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" target="_self">
+            <img title="Скрыть/отобразить все таблицы" alt="v" id="key_HS_all" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/downarrow1.png" data-down="./themes/pmahomme/img/designer/downarrow1.png" data-right="./themes/pmahomme/img/designer/rightarrow1.png">
+        </a>
+        <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#" class="M_butt" target="_self">
+            <img alt="v" id="key_HS" title="Hide/Show tables with no relationship" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/downarrow2.png" data-down="./themes/pmahomme/img/designer/downarrow2.png" data-right="./themes/pmahomme/img/designer/rightarrow2.png">
+        </a>
+    </div>
+    <div id="id_scroll_tab" class="scroll_tab">
+        <table width="100%" style="padding-left: 3px;">
+                            <tbody><tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="article" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.article" style="margin:0;" type="checkbox" value="webblog.article">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.article">
+                        webblog.article
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="article_tag" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.article_tag" style="margin:0;" type="checkbox" value="webblog.article_tag">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.article_tag">
+                        webblog.article_tag
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="category" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.category" style="margin:0;" type="checkbox" value="webblog.category">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.category">
+                        webblog.category
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="comment" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.comment" style="margin:0;" type="checkbox" value="webblog.comment">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.comment">
+                        webblog.comment
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="migration" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.migration" style="margin:0;" type="checkbox" value="webblog.migration">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.migration">
+                        webblog.migration
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="tag" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.tag" style="margin:0;" type="checkbox" value="webblog.tag">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.tag">
+                        webblog.tag
+                    </td>
+                </tr>
+                            <tr>
+                    <td title="Структура" width="1px" class="L_butt2_1">
+                        <img alt="" table_name="user" class="scroll_tab_struct" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec.png">
+                    </td>
+                    <td width="1px">
+                        <input class="scroll_tab_checkbox" title="Скрыть" id="check_vis_webblog.user" style="margin:0;" type="checkbox" value="webblog.user">
+                    </td>
+                    <td class="designer_Tabs" designer_url_table_name="webblog.user">
+                        webblog.user
+                    </td>
+                </tr>
+                    </tbody></table>
+    </div>
+        <div class="center">
+        Количество таблиц: 7
+    </div>
+    <div id="layer_menu_sizer">
+        <div class="floatleft">
+            <img class="icon" data-right="./themes/pmahomme/img/designer/resizeright.png" src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/resize.png">
+        </div>
+    </div>
+</div>
+            <input name="t_x[webblog.article]" type="hidden" id="t_x_webblog.article_">
+    <input name="t_y[webblog.article]" type="hidden" id="t_y_webblog.article_">
+    <input name="t_v[webblog.article]" type="hidden" id="t_v_webblog.article_">
+    <input name="t_h[webblog.article]" type="hidden" id="t_h_webblog.article_">
+    <table id="webblog.article" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 487px; top: 291px; display: block; z-index: 1;" data-left="487" data-top="291">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.article" table_name="webblog.article">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="article">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.article" class="tab_zag" table_name="webblog.article" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    article
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.article">
+                                                                                                                                                                <tr id="id_tr_article.id" class="tab_field" click_field_param="article,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.title" class="tab_field_3" click_field_param="article,title,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.title">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        title : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.description" class="tab_field" click_field_param="article,description,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.description">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        description : text
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.content" class="tab_field" click_field_param="article,content,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.content">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        content : text
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.date" class="tab_field" click_field_param="article,date,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.date">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_date.png" alt="*">
+                                                        date : datetime
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.image" class="tab_field" click_field_param="article,image,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.image">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        image : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.viewed" class="tab_field" click_field_param="article,viewed,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.viewed">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        viewed : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.user_id" class="tab_field" click_field_param="article,user_id,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.user_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        user_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.status" class="tab_field" click_field_param="article,status,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.status">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        status : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article.category_id" class="tab_field" click_field_param="article,category_id,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article.category_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        category_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.article_tag]" type="hidden" id="t_x_webblog.article_tag_">
+    <input name="t_y[webblog.article_tag]" type="hidden" id="t_y_webblog.article_tag_">
+    <input name="t_v[webblog.article_tag]" type="hidden" id="t_v_webblog.article_tag_">
+    <input name="t_h[webblog.article_tag]" type="hidden" id="t_h_webblog.article_tag_">
+    <table id="webblog.article_tag" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 279px; top: 281px; display: block; z-index: 1;" data-left="279" data-top="281">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.article_tag" table_name="webblog.article_tag">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="article_tag">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.article_tag" class="tab_zag" table_name="webblog.article_tag" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    article_tag
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.article_tag">
+                                                                                                                                                                <tr id="id_tr_article_tag.id" class="tab_field" click_field_param="article_tag,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article_tag.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article_tag.article_id" class="tab_field" click_field_param="article_tag,article_id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article_tag.article_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        article_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_article_tag.tag_id" class="tab_field" click_field_param="article_tag,tag_id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.article_tag.tag_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        tag_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.category]" type="hidden" id="t_x_webblog.category_">
+    <input name="t_y[webblog.category]" type="hidden" id="t_y_webblog.category_">
+    <input name="t_v[webblog.category]" type="hidden" id="t_v_webblog.category_">
+    <input name="t_h[webblog.category]" type="hidden" id="t_h_webblog.category_">
+    <table id="webblog.category" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 79px; top: 242px; display: block; z-index: 1;" data-left="79" data-top="242">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.category" table_name="webblog.category">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="category">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.category" class="tab_zag" table_name="webblog.category" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    category
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.category">
+                                                                                                                                                                <tr id="id_tr_category.id" class="tab_field" click_field_param="category,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.category.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_category.title" class="tab_field_3" click_field_param="category,title,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.category.title">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        title : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.comment]" type="hidden" id="t_x_webblog.comment_">
+    <input name="t_y[webblog.comment]" type="hidden" id="t_y_webblog.comment_">
+    <input name="t_v[webblog.comment]" type="hidden" id="t_v_webblog.comment_">
+    <input name="t_h[webblog.comment]" type="hidden" id="t_h_webblog.comment_">
+    <table id="webblog.comment" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 445px; top: 99px; display: block; z-index: 1;" data-left="445" data-top="99">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.comment" table_name="webblog.comment">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="comment">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.comment" class="tab_zag" table_name="webblog.comment" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    comment
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.comment">
+                                                                                                                                                                <tr id="id_tr_comment.id" class="tab_field" click_field_param="comment,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_comment.text" class="tab_field_3" click_field_param="comment,text,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.text">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        text : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_comment.user_id" class="tab_field" click_field_param="comment,user_id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.user_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        user_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_comment.article_id" class="tab_field" click_field_param="comment,article_id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.article_id">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        article_id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_comment.status" class="tab_field" click_field_param="comment,status,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.status">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        status : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_comment.date" class="tab_field" click_field_param="comment,date,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.comment.date">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_date.png" alt="*">
+                                                        date : date
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.migration]" type="hidden" id="t_x_webblog.migration_">
+    <input name="t_y[webblog.migration]" type="hidden" id="t_y_webblog.migration_">
+    <input name="t_v[webblog.migration]" type="hidden" id="t_v_webblog.migration_">
+    <input name="t_h[webblog.migration]" type="hidden" id="t_h_webblog.migration_">
+    <table id="webblog.migration" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 78px; top: 310px; display: block; z-index: 1;" data-left="78" data-top="310">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.migration" table_name="webblog.migration">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="migration">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.migration" class="tab_zag" table_name="webblog.migration" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    migration
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.migration">
+                                                                                                                                                                <tr id="id_tr_migration.version" class="tab_field_3" click_field_param="migration,version,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.migration.version">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        version : varchar(180)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_migration.apply_time" class="tab_field" click_field_param="migration,apply_time,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.migration.apply_time">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        apply_time : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.tag]" type="hidden" id="t_x_webblog.tag_">
+    <input name="t_y[webblog.tag]" type="hidden" id="t_y_webblog.tag_">
+    <input name="t_v[webblog.tag]" type="hidden" id="t_v_webblog.tag_">
+    <input name="t_h[webblog.tag]" type="hidden" id="t_h_webblog.tag_">
+    <table id="webblog.tag" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 119px; top: 406px; display: block; z-index: 1;" data-left="119" data-top="406">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.tag" table_name="webblog.tag">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="tag">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.tag" class="tab_zag" table_name="webblog.tag" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    tag
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.tag">
+                                                                                                                                                                <tr id="id_tr_tag.id" class="tab_field" click_field_param="tag,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.tag.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_tag.title" class="tab_field_3" click_field_param="tag,title,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.tag.title">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        title : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+            <input name="t_x[webblog.user]" type="hidden" id="t_x_webblog.user_">
+    <input name="t_y[webblog.user]" type="hidden" id="t_y_webblog.user_">
+    <input name="t_v[webblog.user]" type="hidden" id="t_v_webblog.user_">
+    <input name="t_h[webblog.user]" type="hidden" id="t_h_webblog.user_">
+    <table id="webblog.user" cellpadding="0" cellspacing="0" class="designer_tab" style="position: absolute; left: 164px; top: 44px; display: block; z-index: 1;">
+        <thead>
+            <tr class="header">
+                                <td class="small_tab" title="Показать/скрыть столбцы" id="id_hide_tbody_webblog.user" table_name="webblog.user">v</td>
+                <td class="small_tab_pref small_tab_pref_1" table_name_small="user">
+                    <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/exec_small.png" title="Отобразить структуру таблицы">
+                </td>
+                <td id="id_zag_webblog.user" class="tab_zag nowrap tab_zag_noquery" table_name="webblog.user" query_set="0">
+                    <span class="owner">
+                        webblog
+                    </span>
+                    user
+                </td>
+                            </tr>
+        </thead>
+        <tbody id="id_tbody_webblog.user">
+                                                                                                                                                                <tr id="id_tr_user.id" class="tab_field" click_field_param="user,id,1,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.id">
+                        <div class="nowrap">
+                                                            <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/FieldKey_small.png" alt="*">
+                                                        id : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_user.name" class="tab_field_3" click_field_param="user,name,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.name">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        name : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_user.email" class="tab_field" click_field_param="user,email,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.email">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        email : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_user.password" class="tab_field" click_field_param="user,password,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.password">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        password : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_user.isAdmin" class="tab_field" click_field_param="user,isAdmin,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.isAdmin">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_int.png" alt="*">
+                                                        isAdmin : int(11)
+                        </div>
+                    </td>
+                                    </tr>
+                                                                                                                                                    <tr id="id_tr_user.photo" class="tab_field" click_field_param="user,photo,0,webblog">
+                                        <td width="10px" colspan="3" id="webblog.user.photo">
+                        <div class="nowrap">
+                                                                                                                                                                                                <img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/Field_small_char.png" alt="*">
+                                                        photo : varchar(255)
+                        </div>
+                    </td>
+                                    </tr>
+                    </tbody>
+    </table>
+</form></div><div id="designer_hint"></div><table id="layer_new_relation" class="hide" width="5%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td class="frams1" width="10px">
+            </td>
+            <td class="frams5" width="99%">
+            </td>
+            <td class="frams2" width="10px">
+                <div class="bor">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="frams8">
+            </td>
+            <td class="input_tab">
+                <table width="168" class="center" cellpadding="2" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="center nowrap">
+                                <strong>
+                                    Создать ссылку                                </strong>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="foreign_relation">
+                        <tr>
+                            <td colspan="2" class="center nowrap">
+                                <strong>
+                                    FOREIGN KEY
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="58" class="nowrap">
+                                on delete
+                            </td>
+                            <td width="102">
+                                <select name="on_delete" id="on_delete">
+                                    <option value="nix" selected="selected">
+                                        --
+                                    </option>
+                                    <option value="CASCADE">
+                                        CASCADE
+                                    </option>
+                                    <option value="SET NULL">
+                                        SET NULL
+                                    </option>
+                                    <option value="NO ACTION">
+                                        NO ACTION
+                                    </option>
+                                    <option value="RESTRICT">
+                                        RESTRICT
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nowrap">
+                                on update
+                            </td>
+                            <td>
+                                <select name="on_update" id="on_update">
+                                    <option value="nix" selected="selected">
+                                        --
+                                    </option>
+                                    <option value="CASCADE">
+                                        CASCADE
+                                    </option>
+                                    <option value="SET NULL">
+                                        SET NULL
+                                    </option>
+                                    <option value="NO ACTION">
+                                        NO ACTION
+                                    </option>
+                                    <option value="RESTRICT">
+                                        RESTRICT
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="center nowrap">
+                                <input type="button" id="ok_new_rel_panel" class="butt" name="Button" value="OK">
+                                <input type="button" id="cancel_new_rel_panel" class="butt" name="Button" value="Отменить">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class="frams6">
+            </td>
+        </tr>
+        <tr>
+            <td class="frams4">
+                <div class="bor">
+                </div>
+            </td>
+            <td class="frams7">
+            </td>
+            <td class="frams3">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table id="layer_upd_relation" class="hide" width="5%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td class="frams1" width="10px">
+            </td>
+            <td class="frams5" width="99%">
+            </td>
+            <td class="frams2" width="10px">
+                <div class="bor">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="frams8">
+            </td>
+            <td class="input_tab">
+                <table width="100%" class="center" cellpadding="2" cellspacing="0">
+                    <tbody><tr>
+                        <td colspan="3" class="center nowrap">
+                            <strong>
+                                Удалить ссылку                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="center nowrap">
+                            <input id="del_button" name="Button" type="button" class="butt" value="Удалить">
+                            <input id="cancel_button" type="button" class="butt" name="Button" value="Отменить">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+            <td class="frams6">
+            </td>
+        </tr>
+        <tr>
+            <td class="frams4">
+                <div class="bor">
+                </div>
+            </td>
+            <td class="frams7">
+            </td>
+            <td class="frams3">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div id="PMA_disable_floating_menubar"></div></div><div id="selflink" class="print_ignore" style="display: none;"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog&amp;table=&amp;server=1&amp;target=" title="Открыть phpMyAdmin в новом окне" target="_blank" rel="noopener noreferrer"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Открыть phpMyAdmin в новом окне" alt="Открыть phpMyAdmin в новом окне" class="icon ic_window-new"></a></div><div id="pma_errors" class="clearfloat"><div class="error"><strong>Catchable Fatal Error</strong> in .\libraries\classes\Database\Designer.php#290<br>
+<img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_error"> Argument 1 passed to PhpMyAdmin\Database\Designer::getHtmlTableList() must be of the type array, null given, called in D:\open_server_5_2_9_basic\OSPanel\modules\system\html\openserver\phpmyadmin\db_designer.php on line 190 and defined<br>
+<br>
+<strong>Backtrace</strong><br>
+<br>
+.\db_designer.php#190: PhpMyAdmin\Database\Designer-&gt;getHtmlTableList(<br>
+	NULL,<br>
+	NULL,<br>
+)<br>
+</div><div class="error"><strong>Catchable Fatal Error</strong> in .\libraries\classes\Database\Designer.php#315<br>
+<img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_error"> Argument 1 passed to PhpMyAdmin\Database\Designer::getDatabaseTables() must be of the type array, null given, called in D:\open_server_5_2_9_basic\OSPanel\modules\system\html\openserver\phpmyadmin\db_designer.php on line 196 and defined<br>
+<br>
+<strong>Backtrace</strong><br>
+<br>
+.\db_designer.php#196: PhpMyAdmin\Database\Designer-&gt;getDatabaseTables(<br>
+	NULL,<br>
+	NULL,<br>
+	array,<br>
+	array,<br>
+	array,<br>
+)<br>
+</div><form method="post" action="http://127.0.0.1:8080/openserver/phpmyadmin/error_report.php" id="pma_report_errors_form"><input type="hidden" name="exception_type" value="php"><input type="hidden" name="send_error_report" value="1"><input type="hidden" name="token" value="Q^b@?5qg&#39;7KvA8&gt;0"><input type="submit" value="Отчёт" id="pma_report_errors" class="floatright"><input type="checkbox" name="always_send" id="always_send_checkbox" value="true"><label for="always_send_checkbox">Автоматически отправлять отчёт в следующий раз</label><input type="submit" value="Игнорировать" id="pma_ignore_errors_bottom" class="floatright"><input type="submit" value="Игнорировать всё" id="pma_ignore_all_errors_bottom" class="floatright"></form></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="pma_navigation_settings" aria-labelledby="ui-id-12" style="position: fixed; height: auto; width: 700px; top: 79.9371px; left: 609px;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-12" class="ui-dialog-title">Настройки, касающиеся страницы</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="pma_navigation_settings" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 166.266px; max-height: 668.406px; height: auto;"><div class="page_settings"><form method="post" action="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog&amp;table=&amp;server=1&amp;target=" class="config-form disableAjax"><input type="hidden" name="tab_hash" value=""><input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1">
+<input type="hidden" name="token" value="Q^b@?5qg&#39;7KvA8&gt;0">
+<input type="hidden" name="submit_save" value="Navi"><input type="hidden" name="token" value="Q^b@?5qg&#39;7KvA8&gt;0"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#Navi_panel">
+            Панель навигации
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#Navi_tree">
+            Дерево навигации
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#Navi_servers">
+            Сервера
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#Navi_databases">
+            Базы данных
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#Navi_tables">
+            Таблицы
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="Navi_panel" style="">
+<legend>Панель навигации</legend>
+    <p>Настроить вид панели навигации.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowDatabasesNavigationAsTree">Показать навигацию по базам данных в виде дерева</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>В панели навигации заменяет дерево базы данных селектором</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#ShowDatabasesNavigationAsTree" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLinkWithMainPanel">Связать с главной панелью</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Связать с главной панелью, выделив текущую базу данных или таблицу.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationLinkWithMainPanel" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationDisplayLogo">Показывать логотип</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Отображать логотип в панели навигации.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationDisplayLogo" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLink">Ссылка логотипа</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>URL, на который будет ссылаться логотип в панели навигации.</small></th><td><input type="text" class="all85" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationLogoLink" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLinkWindow">Цель ссылки логотипа</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Открывать ссылку в основном окне (<kbd>main</kbd>) или в новом (<kbd>new</kbd>).</small></th><td><select class="all85" name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow"><option value="main" selected="selected">main</option><option value="new">new</option></select><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationLogoLinkWindow" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreePointerEnable">Включить подсветку</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Подсвечивать сервер при наведении курсора.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreePointerEnable" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="FirstLevelNavigationItems">Максимальное количество пунктов на первом уровне</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Количество пунктов, выводимых на одной странице первого уровня дерева навигации.</small></th><td><input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#FirstLevelNavigationItems" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDisplayItemFilterMinimum">Минимальное количество пунктов для вывода поля фильтра</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Определяет минимальное количество пунктов (таблиц, представлений, функций и событий) для вывода поля фильтра.</small></th><td><input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeDisplayItemFilterMinimum" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumRecentTables">Недавно использованные таблицы</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Максимальное количество недавно использованных таблиц; для отключения установите в 0.</small></th><td><input type="number" name="NumRecentTables" id="NumRecentTables" value="10"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NumRecentTables" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumFavoriteTables">Избранные таблицы</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Максимальное количество избранных таблиц; для отключения установите в 0.</small></th><td><input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NumFavoriteTables" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationWidth">Ширина панели навигации</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Set to 0 to collapse navigation panel.</small></th><td><input type="number" name="NavigationWidth" id="NavigationWidth" value="240"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationWidth" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tree" style="display: none;">
+<legend>Дерево навигации</legend>
+    <p>Модифицировать дерево навигации.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="MaxNavigationItems">Максимальное количество пунктов в ветке</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Количество пунктов, выводимых на одной странице дерева навигации.</small></th><td><input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#MaxNavigationItems" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableGrouping">Группировать пункты в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Группировать пункты в дереве навигации (определяется разделителем, указанным в закладках баз данных и таблиц сверху).</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeEnableGrouping" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableExpansion">Включить раскрытие навигационного дерева</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Следует ли предлагать возможность раскрытия дерева в панели навигации.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeEnableExpansion" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowTables">Отображение таблиц в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Следует ли отображать таблицы под базой данных в дереве навигации</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeShowTables" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowViews">Показать представления в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Стоит ли отображать представления под базой данных в дереве навигации</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeShowViews" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowFunctions">Отображать функции в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Стоит ли отображать функции под базой данный в навигационном дереве</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeShowFunctions" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowProcedures">Отображать процедуры в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Стоит ли отображать процедуры под базой данный в навигационном дереве</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeShowProcedures" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowEvents">Отображать события в дереве</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Стоит ли отображать события под базой данных в дереве навигации</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeShowEvents" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_servers" style="display: none;">
+<legend>Сервера</legend>
+    <p>Параметры отображения списка серверов.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationDisplayServers">Отображать выбор сервера</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Отображать в верхней части панели навигации список серверов.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="checked"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationDisplayServers" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="DisplayServersList">Выводить серверы списком</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Выводить доступные для выбора серверы в виде последовательного списка вместо выпадающего.</small></th><td><span class="checkbox"><input type="checkbox" name="DisplayServersList" id="DisplayServersList"></span><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#DisplayServersList" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_databases" style="display: none;">
+<legend>Базы данных</legend>
+    <p>Параметры отображения списка баз данных.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDisplayDbFilterMinimum">Минимальное количество баз данных для отображения поля фильтра</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeDisplayDbFilterMinimum" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDbSeparator">Разделитель дерева баз данных</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Строка, разделяющая базы данных на различные уровни дерева.</small></th><td><input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeDbSeparator" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tables" style="display: none;">
+<legend>Таблицы</legend>
+    <p>Параметры отображения списка таблиц.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDefaultTabTable">Цель иконки быстрого доступа</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable"><option value="structure" selected="selected">Структура</option><option value="sql">SQL</option><option value="search">Поиск</option><option value="insert">Вставить</option><option value="browse">Обзор</option></select><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeDefaultTabTable" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDefaultTabTable2">Цель второй иконки быстрого доступа</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2"><option value="" selected="selected"></option><option value="structure">Структура</option><option value="sql">SQL</option><option value="search">Поиск</option><option value="insert">Вставить</option><option value="browse">Обзор</option></select><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeDefaultTabTable2" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableSeparator">Разделитель дерева таблиц</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span><small>Строка, разделяющая таблицы на различные уровни дерева.</small></th><td><input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeTableSeparator" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableLevel">Максимальная глубина дерева таблиц</label><span class="doc"><a href="http://127.0.0.1:8080/openserver/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="Документация" alt="Документация" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1"><a class="restore-default hide" href="http://127.0.0.1:8080/openserver/phpmyadmin/db_designer.php?db=webblog#NavigationTreeTableLevel" title="Восстановить изначальное значение" style="display: inline-block; opacity: 0.25;"><img src="./127.0.0.1_8080 _ 127.0.0.1 _ webblog _ phpMyAdmin 4.8.3_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+validateField('FirstLevelNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NumRecentTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NumFavoriteTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NavigationWidth', 'PMA_validateNonNegativeNumber', true);
+validateField('MaxNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NavigationTreeTableLevel', 'PMA_validatePositiveNumber', true);
+$.extend(PMA_messages, {
+	'error_nan_p': 'Значение должно быть положительным числом!',
+	'error_nan_nneg': 'Значение должно быть отрицательным числом!',
+	'error_incorrect_port': 'Некорректный номер порта!',
+	'error_invalid_value': 'Некорректное значение!',
+	'error_value_lte': 'Значение должно быть меньше или равно %s!'});
+$.extend(defaultValues, {
+	'ShowDatabasesNavigationAsTree': true,
+	'NavigationLinkWithMainPanel': true,
+	'NavigationDisplayLogo': true,
+	'NavigationLogoLink': 'index.php',
+	'NavigationLogoLinkWindow': ['main'],
+	'NavigationTreePointerEnable': true,
+	'FirstLevelNavigationItems': '100',
+	'NavigationTreeDisplayItemFilterMinimum': '30',
+	'NumRecentTables': '10',
+	'NumFavoriteTables': '10',
+	'NavigationWidth': '240',
+	'MaxNavigationItems': '50',
+	'NavigationTreeEnableGrouping': true,
+	'NavigationTreeEnableExpansion': true,
+	'NavigationTreeShowTables': true,
+	'NavigationTreeShowViews': true,
+	'NavigationTreeShowFunctions': true,
+	'NavigationTreeShowProcedures': true,
+	'NavigationTreeShowEvents': true,
+	'NavigationDisplayServers': true,
+	'DisplayServersList': false,
+	'NavigationTreeDisplayDbFilterMinimum': '30',
+	'NavigationTreeDbSeparator': '_',
+	'NavigationTreeDefaultTabTable': ['structure'],
+	'NavigationTreeDefaultTabTable2': [''],
+	'NavigationTreeTableSeparator': '__',
+	'NavigationTreeTableLevel': '1'});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">Применить</button><button type="button" class="ui-button ui-corner-all ui-widget">Отменить</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 800;"></div></body></html>
